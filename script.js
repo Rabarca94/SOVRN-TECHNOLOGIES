@@ -1,1 +1,25 @@
-const toggle=document.querySelector('.mobile-toggle');const nav=document.querySelector('.nav');toggle?.addEventListener('click',()=>{const open=nav.dataset.open==='1';nav.dataset.open=open?'0':'1';nav.style.display=open?'none':'flex';if(!open){nav.style.position='absolute';nav.style.top='70px';nav.style.left='0';nav.style.right='0';nav.style.padding='24px 7vw';nav.style.background='#050505';nav.style.flexDirection='column';nav.style.gap='20px';nav.style.borderBottom='1px solid #222'}});document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<951){nav.style.display='none';nav.dataset.open='0'}}));document.querySelectorAll('[data-scroll]').forEach(x=>x.addEventListener('click',e=>{e.preventDefault();document.querySelector(x.dataset.scroll)?.scrollIntoView({behavior:'smooth'})}));const form=document.getElementById('quoteForm');form?.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(form);const subject=encodeURIComponent('SOVRN Consultation Request — '+(d.get('property')||'Property'));const body=encodeURIComponent(`Name: ${d.get('name')}\nEmail: ${d.get('email')}\nPhone: ${d.get('phone')}\nProperty: ${d.get('property')}\nBudget: ${d.get('budget')}\n\nProject details:\n${d.get('message')}`);document.getElementById('status').innerHTML='Request prepared. <a href="mailto:info@sovrnisi.com?subject='+subject+'&body='+body+'">Open your email to send it →</a>';});
+const menu=document.querySelector('.menu'),nav=document.querySelector('.topbar nav');
+menu?.addEventListener('click',()=>{
+ const open=nav?.dataset.open==='1';
+ if(!nav)return;
+ nav.dataset.open=open?'0':'1';
+ nav.style.display=open?'none':'flex';
+ if(!open)Object.assign(nav.style,{position:'absolute',top:'64px',left:'0',right:'0',padding:'20px 5vw',background:'#050505',flexDirection:'column',gap:'18px',borderBottom:'1px solid #222'});
+});
+document.querySelectorAll('.topbar nav a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<1001&&nav){nav.style.display='none';nav.dataset.open='0'}}));
+document.getElementById('quoteForm')?.addEventListener('submit',e=>{
+ e.preventDefault();
+ const d=new FormData(e.target);
+ const subject=encodeURIComponent('SOVRN Security Assessment Request');
+ const body=encodeURIComponent(`Name: ${d.get('name')}
+Phone: ${d.get('phone')}
+Email: ${d.get('email')}
+Customer Type: ${d.get('type')}
+Property: ${d.get('property')}
+Service: ${d.get('service')}
+Budget: ${d.get('budget')}
+
+Project Description:
+${d.get('message')}`);
+ document.getElementById('status').innerHTML='Request prepared. <a href="mailto:info@sovrnisi.com?subject='+subject+'&body='+body+'">Open email to send →</a>';
+});

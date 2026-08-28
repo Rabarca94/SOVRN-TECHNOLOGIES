@@ -1,23 +1,18 @@
-# SOVRN Technologies — Website V3
+# SOVRN Technologies V5
 
-## Preview
-Open `index.html` in any modern browser. No server is required for the visual site.
+This version is rebuilt to closely match the approved dark SOVRN homepage concept.
 
-## What's new
-- Branded SOVRN SVG logo
-- Residential and commercial service pages/sections
-- Essential / Advanced / Complete deployment packages
-- Strong no-subscription / ownership section
-- Interactive-style security architecture map
-- Consultation form with a `mailto:` fallback
-- Mobile responsive navigation
-- SOVRN visual assets from the supplied brand board
+Key changes:
+- Hero headline changed to “Modern Technology. Without the Commitment.”
+- Clean house-only hero image treatment
+- Dark premium layout with compact navigation and consultation CTA
+- Benefits strip
+- What We Protect section
+- Six solution categories
+- Why SOVRN section
+- Full-width van section with object-fit: contain so the full vehicle remains visible
+- Security architecture section
+- Security assessment form
+- Responsive mobile layout
 
-## Going live
-1. Upload the entire folder to a static host such as your web host, Cloudflare Pages, Netlify, or Vercel.
-2. Keep the relative folder structure intact.
-3. Replace the temporary `mailto:info@sovrnisi.com` address in `script.js` with your real business email.
-4. Replace the reference-board crops in `/assets` with licensed final photography before launch.
-5. Connect the form to a real form/CRM provider when ready.
-
-The site does not currently transmit form data to a server; it opens the visitor's email client with a prepared consultation request.
+The form currently prepares an email via mailto. Replace `info@sovrnisi.com` in `script.js` with the real destination email before final launch.
