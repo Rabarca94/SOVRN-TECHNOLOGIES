@@ -42,3 +42,16 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:30px;pa
 .hero-copy p{
   text-shadow:0 2px 12px rgba(0,0,0,.95);
 }
+
+/* Slightly zoomed-out hero artwork for Services, About, and Contact */
+.hero-bg.hero-zoomout{
+  background-size:92% auto;
+  background-repeat:no-repeat;
+  background-color:#050505;
+}
+@media(max-width:900px){
+  .hero-bg.hero-zoomout{
+    background-size:auto 92%;
+    background-position:center;
+  }
+}

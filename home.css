@@ -89,3 +89,15 @@ a{color:inherit;text-decoration:none}
 @media(min-width:701px) and (max-width:1180px){
   .desktop-page{width:100%;max-width:none}
 }
+
+/* Homepage assessment form cleanup: prevent duplicate lettering over baked-in desktop artwork. */
+@media (min-width:701px){
+  .form-overlay input::placeholder,
+  .form-overlay textarea::placeholder,
+  .assessment-form input::placeholder,
+  .assessment-form textarea::placeholder,
+  .assessment-overlay input::placeholder,
+  .assessment-overlay textarea::placeholder{
+    color:transparent !important;
+  }
+}
