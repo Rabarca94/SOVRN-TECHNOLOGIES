@@ -56,16 +56,17 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:30px;pa
   }
 }
 
-/* Show more of Services / About / Contact hero artwork */
+
+/* Services / About / Contact: SAME existing images, display sizing only.
+   Fill the entire hero/headliner edge-to-edge with no empty bands. */
 .hero.hero-show-more .hero-bg{
-  background-size:contain !important;
+  background-size:cover !important;
   background-repeat:no-repeat !important;
   background-position:center center !important;
-  background-color:#050505;
 }
 @media(max-width:900px){
   .hero.hero-show-more .hero-bg{
-    background-size:contain !important;
+    background-size:cover !important;
     background-position:center center !important;
   }
 }
