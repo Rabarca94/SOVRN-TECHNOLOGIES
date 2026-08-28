@@ -90,14 +90,113 @@ a{color:inherit;text-decoration:none}
   .desktop-page{width:100%;max-width:none}
 }
 
-/* Homepage assessment form cleanup: prevent duplicate lettering over baked-in desktop artwork. */
-@media (min-width:701px){
-  .form-overlay input::placeholder,
-  .form-overlay textarea::placeholder,
-  .assessment-form input::placeholder,
-  .assessment-form textarea::placeholder,
-  .assessment-overlay input::placeholder,
-  .assessment-overlay textarea::placeholder{
-    color:transparent !important;
+/* DESKTOP ASSESSMENT — live HTML replaces the text baked into the homepage artwork */
+@media(min-width:701px){
+  .desktop-assessment-panel{
+    position:absolute;
+    z-index:30;
+    left:0;
+    right:0;
+    bottom:0;
+    height:12.5%;
+    background:#050505;
+    border-top:1px solid #262626;
+    display:grid;
+    grid-template-columns:39% 61%;
+    padding:2.15% 4.1% 1.65%;
+    line-height:normal;
+  }
+  .desktop-assessment-copy{
+    padding-right:7%;
+  }
+  .desktop-assessment-copy h2{
+    margin:0 0 11px;
+    font-size:22px;
+    line-height:1.05;
+    font-weight:400;
+    letter-spacing:.02em;
+    color:#f2f2f2;
+    white-space:nowrap;
+  }
+  .desktop-assessment-copy h2:after{
+    content:"";
+    display:block;
+    width:45px;
+    height:1px;
+    background:var(--gold);
+    margin-top:10px;
+  }
+  .desktop-assessment-copy p{
+    margin:0 0 15px;
+    font-size:12px;
+    line-height:1.55;
+    color:#dedede;
+  }
+  .desktop-assessment-copy ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  .desktop-assessment-copy li{
+    position:relative;
+    padding-left:22px;
+    margin:8px 0;
+    font-size:11px;
+    color:#c7c7c7;
+  }
+  .desktop-assessment-copy li:before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:#d2a52e;
+  }
+
+  .desktop-assessment-form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:repeat(4,34px) 40px;
+    gap:7px 14px;
+    align-content:start;
+  }
+  .desktop-assessment-form input,
+  .desktop-assessment-form select,
+  .desktop-assessment-form textarea{
+    width:100%;
+    min-width:0;
+    background:#090909;
+    border:1px solid #444;
+    color:#ddd;
+    font:11px Arial,Helvetica,sans-serif;
+    padding:0 12px;
+    outline:none;
+    border-radius:0;
+  }
+  .desktop-assessment-form textarea{
+    resize:none;
+    padding-top:10px;
+  }
+  .desktop-assessment-form input::placeholder,
+  .desktop-assessment-form textarea::placeholder{
+    color:#888;
+    opacity:1;
+  }
+  .desktop-assessment-form select{
+    color:#aaa;
+  }
+  .desktop-assessment-form button{
+    grid-column:1/-1;
+    height:40px;
+    background:#090909;
+    color:#fff;
+    border:1px solid var(--gold);
+    font-size:11px;
+    letter-spacing:.06em;
+    cursor:pointer;
+  }
+  .desktop-assessment-form input:focus,
+  .desktop-assessment-form select:focus,
+  .desktop-assessment-form textarea:focus{
+    border-color:var(--gold);
+    background:#0c0c0c;
   }
 }

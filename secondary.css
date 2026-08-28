@@ -55,3 +55,17 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:30px;pa
     background-position:center;
   }
 }
+
+/* Show more of Services / About / Contact hero artwork */
+.hero.hero-show-more .hero-bg{
+  background-size:contain !important;
+  background-repeat:no-repeat !important;
+  background-position:center center !important;
+  background-color:#050505;
+}
+@media(max-width:900px){
+  .hero.hero-show-more .hero-bg{
+    background-size:contain !important;
+    background-position:center center !important;
+  }
+}
