@@ -1,0 +1,20 @@
+# SOVRN Technologies — Latest Approved Multi-Page Website
+
+This package is based on the newest approved homepage artwork only.
+
+Updates reflected:
+- More modest modern residential image
+- Facilities image without "Secure Your Environment" text
+- Sharper latest homepage artwork
+- Updated Why SOVRN wording
+- Single SOVRN van with ladder
+- Dedicated Residential, Commercial, Services, About, and Contact pages
+- Navigation connects all pages
+- Secondary pages use the same black / charcoal / white / gold visual system
+- Contact forms currently open the user's email client via mailto:info@sovrnisi.com
+
+Upload every file and the entire `assets` folder to the root of the GitHub repository connected to Vercel.
+
+
+## Homepage scale update
+The homepage now displays at a larger desktop scale (1180px wide) so it feels like the secondary pages. Visitors see less of the full homepage at once and naturally scroll down through What We Protect, Our Solutions, Why SOVRN, Security Architecture, and the assessment form. The underlying approved homepage artwork and secondary pages are otherwise unchanged.
