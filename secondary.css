@@ -30,3 +30,15 @@ a{color:inherit;text-decoration:none}
 footer{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:30px 3vw;border-top:1px solid #222;color:#777}footer nav{display:flex;gap:18px;font-size:9px}footer .copy{font-size:9px}
 @media(max-width:900px){.nav,.consult{display:none}.menu{display:block}.benefits{grid-template-columns:1fr 1fr}.heading,.split,.contact{grid-template-columns:1fr}.split .photo{min-height:350px}.grid3{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr}.process .arrow{transform:rotate(90deg);text-align:center}}
 @media(max-width:560px){.logo{min-width:0}.logo b{font-size:19px}.logo small{font-size:6px}.hero{height:430px}.hero-copy{left:6vw;right:6vw}.hero h1{font-size:38px}.benefits,.grid3{grid-template-columns:1fr}.section,.split .copy,.contact{padding:58px 6vw}.cta{padding:58px 6vw;flex-direction:column;align-items:flex-start}.form{grid-template-columns:1fr}.form textarea,.form button{grid-column:auto}footer{flex-direction:column;align-items:flex-start}}
+
+/* Unified hero emphasis across all secondary pages */
+.hero-copy{max-width:760px}
+.hero h1{
+  text-shadow:0 3px 20px rgba(0,0,0,.88),0 1px 3px rgba(0,0,0,1);
+}
+.hero h1 span{
+  color:#d8d8d8;
+}
+.hero-copy p{
+  text-shadow:0 2px 12px rgba(0,0,0,.95);
+}
