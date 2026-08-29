@@ -70,3 +70,10 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:30px;pa
     background-position:center center !important;
   }
 }
+
+/* Requested Services support block: preserve existing site design language. */
+.service-support .service-van-photo{
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}
