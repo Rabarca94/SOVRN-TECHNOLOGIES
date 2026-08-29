@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Residential | SOVRN Technologies</title>
+<link rel="stylesheet" href="site.css">
+</head><body>
+<main class="page-shot">
+<img src="assets/residential.jpg" alt="Residential">
+<a class="hotspot" href="index.html" aria-label="Home" style="left:33.5%;top:1.2%;width:6.0%;height:6%"></a>
+<a class="hotspot" href="residential.html" aria-label="Residential" style="left:41.4%;top:1.2%;width:10.5%;height:6%"></a>
+<a class="hotspot" href="commercial.html" aria-label="Commercial" style="left:53.0%;top:1.2%;width:10.0%;height:6%"></a>
+<a class="hotspot" href="services.html" aria-label="Services" style="left:65.0%;top:1.2%;width:8.0%;height:6%"></a>
+<a class="hotspot" href="about.html" aria-label="About" style="left:75.0%;top:1.2%;width:6.5%;height:6%"></a>
+<a class="hotspot" href="contact.html" aria-label="Contact" style="left:83.0%;top:1.2%;width:8.0%;height:6%"></a>
+<a class="hotspot" href="contact.html" aria-label="Request Consultation" style="left:91.0%;top:1.3%;width:8.0%;height:6%"></a>
+<a class="hotspot" href="residential.html" aria-label="Explore Residential Solutions" style="left:5.2%;top:57.0%;width:41.0%;height:7.2%"></a>
+</main>
+
+<div class="mobile-site">
+
+<div class="m-header">
+  <a class="m-logo" href="index.html">SOVRN<small>TECHNOLOGIES</small></a>
+  <button class="m-menu" aria-expanded="false">MENU</button>
+  <nav class="m-nav"><a href="index.html" class="">HOME</a><a href="residential.html" class="active">RESIDENTIAL</a><a href="commercial.html" class="">COMMERCIAL</a><a href="services.html" class="">SERVICES</a><a href="about.html" class="">ABOUT</a><a href="contact.html" class="">CONTACT</a><a class="m-consult" href="contact.html">REQUEST CONSULTATION</a></nav>
+</div>
+<section class="m-hero" style="--hero:url('assets/residential.jpg')">
+  <div class="m-hero-copy">
+    <div class="m-kicker">RESIDENTIAL</div>
+    <h1>YOUR HOME.<br>UNDER YOUR<br><span>SUPERVISION.</span></h1>
+    <p>Smart, secure, and built around you. Technology that works quietly so you can live confidently.</p>
+    <div class="m-actions"><a class="m-btn" href="contact.html">REQUEST CONSULTATION</a></div>
+  </div>
+</section>
+<section class="m-section">
+  <h2>SECURITY WITH <span>BOUNDARIES</span></h2>
+  <p class="m-section-intro">Smart technology that protects what matters and fits the way you live.</p>
+  <div class="m-grid">
+    <div class="m-card"><b>SMART PROTECTION</b><p>Advanced systems that detect, deter and alert.</p></div>
+    <div class="m-card"><b>REMOTE ACCESS</b><p>Monitor your property from anywhere.</p></div>
+    <div class="m-card"><b>BUILT FOR YOU</b><p>Custom solutions designed for your home.</p></div>
+  </div>
+</section>
+
+<footer class="m-footer">
+  <strong>SOVRN TECHNOLOGIES</strong>
+  Merced, California · Security · Smart Home · Networking
+</footer>
+<script>
+document.querySelectorAll('.m-menu').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const nav=btn.parentElement.querySelector('.m-nav');
+    const open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+});
+</script>
+
+</div>
+</body></html>

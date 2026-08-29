@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | SOVRN Technologies</title>
+<link rel="stylesheet" href="site.css">
+</head><body>
+<main class="page-shot">
+<img src="assets/contact.jpg" alt="Contact">
+<a class="hotspot" href="index.html" aria-label="Home" style="left:32.0%;top:1.0%;width:7.0%;height:7%"></a>
+<a class="hotspot" href="residential.html" aria-label="Residential" style="left:40.0%;top:1.0%;width:11.0%;height:7%"></a>
+<a class="hotspot" href="commercial.html" aria-label="Commercial" style="left:52.0%;top:1.0%;width:11.0%;height:7%"></a>
+<a class="hotspot" href="services.html" aria-label="Services" style="left:64.0%;top:1.0%;width:8.0%;height:7%"></a>
+<a class="hotspot" href="about.html" aria-label="About" style="left:74.0%;top:1.0%;width:7.0%;height:7%"></a>
+<a class="hotspot" href="contact.html" aria-label="Contact" style="left:82.0%;top:1.0%;width:8.0%;height:7%"></a>
+<a class="hotspot" href="contact.html" aria-label="Request Consultation" style="left:90.0%;top:1.0%;width:9.0%;height:7%"></a>
+<a class="hotspot" href="contact.html" aria-label="Get In Touch" style="left:4.0%;top:29.0%;width:18.0%;height:8.0%"></a>
+</main>
+
+<div class="mobile-site">
+
+<div class="m-header">
+  <a class="m-logo" href="index.html">SOVRN<small>TECHNOLOGIES</small></a>
+  <button class="m-menu" aria-expanded="false">MENU</button>
+  <nav class="m-nav"><a href="index.html" class="">HOME</a><a href="residential.html" class="">RESIDENTIAL</a><a href="commercial.html" class="">COMMERCIAL</a><a href="services.html" class="">SERVICES</a><a href="about.html" class="">ABOUT</a><a href="contact.html" class="active">CONTACT</a><a class="m-consult" href="contact.html">REQUEST CONSULTATION</a></nav>
+</div>
+<section class="m-hero" style="--hero:url('assets/contact-phone-hero.jpg')">
+  <div class="m-hero-copy">
+    <div class="m-kicker">CONTACT SOVRN</div>
+    <h1>CONTACT <span>US</span></h1>
+    <p>Have questions or ready to get started? We’re here to help.</p>
+    <div class="m-actions"><a class="m-btn" href="#mobile-contact-form">GET IN TOUCH</a></div>
+  </div>
+</section>
+<section class="m-section" id="mobile-contact-form">
+  <h2>SEND US A <span>MESSAGE</span></h2>
+  <form class="m-form" action="mailto:Rabarac94@yahoo.com" method="post" enctype="text/plain">
+    <input name="name" placeholder="Full Name" required>
+    <input name="email" type="email" placeholder="Email Address" required>
+    <input name="phone" placeholder="Phone Number">
+    <select name="service"><option value="">Service Interest</option><option>Security Systems</option><option>Video Surveillance</option><option>Smart Home</option><option>Networking</option><option>Commercial Security</option></select>
+    <textarea name="message" placeholder="Message"></textarea>
+    <button type="submit">SEND MESSAGE</button>
+  </form>
+</section>
+
+<footer class="m-footer">
+  <strong>SOVRN TECHNOLOGIES</strong>
+  Merced, California · Security · Smart Home · Networking
+</footer>
+<script>
+document.querySelectorAll('.m-menu').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const nav=btn.parentElement.querySelector('.m-nav');
+    const open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+});
+</script>
+
+</div>
+</body></html>

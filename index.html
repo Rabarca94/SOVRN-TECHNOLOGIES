@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home | SOVRN Technologies</title>
+<link rel="stylesheet" href="site.css">
+</head><body>
+<main class="page-shot">
+<img src="assets/home.jpg" alt="Home">
+<a class="hotspot" href="index.html" aria-label="Home" style="left:30.5%;top:1.0%;width:5.5%;height:4%"></a>
+<a class="hotspot" href="residential.html" aria-label="Residential" style="left:37.1%;top:1.0%;width:8.0%;height:4%"></a>
+<a class="hotspot" href="commercial.html" aria-label="Commercial" style="left:46.0%;top:1.0%;width:8.5%;height:4%"></a>
+<a class="hotspot" href="services.html" aria-label="Services" style="left:57.4%;top:1.0%;width:6.0%;height:4%"></a>
+<a class="hotspot" href="about.html" aria-label="About" style="left:66.7%;top:1.0%;width:5.0%;height:4%"></a>
+<a class="hotspot" href="contact.html" aria-label="Contact" style="left:73.4%;top:1.0%;width:6.0%;height:4%"></a>
+<a class="hotspot" href="contact.html" aria-label="Request Consultation" style="left:82.2%;top:1.1%;width:15.0%;height:4%"></a>
+<a class="hotspot" href="services.html" aria-label="Explore Solutions" style="left:4.5%;top:27.9%;width:21.0%;height:4.2%"></a>
+<a class="hotspot" href="residential.html" aria-label="Residential Solutions" style="left:7.3%;top:63.0%;width:16.0%;height:4.8%"></a>
+<a class="hotspot" href="commercial.html" aria-label="Commercial Solutions" style="left:53.4%;top:63.0%;width:16.0%;height:4.8%"></a>
+</main>
+
+<div class="mobile-site">
+
+<div class="m-header">
+  <a class="m-logo" href="index.html">SOVRN<small>TECHNOLOGIES</small></a>
+  <button class="m-menu" aria-expanded="false">MENU</button>
+  <nav class="m-nav"><a href="index.html" class="active">HOME</a><a href="residential.html" class="">RESIDENTIAL</a><a href="commercial.html" class="">COMMERCIAL</a><a href="services.html" class="">SERVICES</a><a href="about.html" class="">ABOUT</a><a href="contact.html" class="">CONTACT</a><a class="m-consult" href="contact.html">REQUEST CONSULTATION</a></nav>
+</div>
+<section class="m-hero" style="--hero:url('assets/home.jpg')">
+  <div class="m-hero-copy">
+    <div class="m-kicker">SOVRN TECHNOLOGIES</div>
+    <h1>INVISIBLE.<br>INTELLIGENT.<br><span>INDEPENDENT.</span></h1>
+    <p>Advanced security and modern solutions built around ownership, reliability and professional installation.</p>
+    <div class="m-actions"><a class="m-btn" href="services.html">EXPLORE SOLUTIONS</a></div>
+  </div>
+</section>
+<section class="m-section">
+  <h2>SMART SOLUTIONS<br>FOR EVERY SPACE</h2>
+  <p class="m-section-intro">From homes to businesses, we deliver modern security and IT infrastructure built for reliability and performance.</p>
+  <div class="m-grid">
+    <a class="m-card m-image-card" href="residential.html"><img src="assets/residential.jpg" alt="Residential security"><div class="overlay"><b>RESIDENTIAL SOLUTIONS</b><small>Protect what matters most.</small></div></a>
+    <a class="m-card m-image-card" href="commercial.html"><img src="assets/commercial.jpg" alt="Commercial security"><div class="overlay"><b>COMMERCIAL SOLUTIONS</b><small>Reliable systems for your business.</small></div></a>
+  </div>
+</section>
+<section class="m-section alt">
+  <h2>REQUEST <span>AN ASSESSMENT</span></h2>
+  <p class="m-section-intro">Tell us about your needs and one of our specialists will reach out to discuss the right solution for you.</p>
+  <form class="m-form" action="mailto:Rabarac94@yahoo.com" method="post" enctype="text/plain">
+    <input name="name" placeholder="Full Name" required>
+    <input name="email" type="email" placeholder="Email Address" required>
+    <input name="phone" placeholder="Phone Number">
+    <select name="service"><option value="">Service Interest</option><option>Security Systems</option><option>Video Surveillance</option><option>Smart Home</option><option>Networking</option><option>Commercial Security</option></select>
+    <textarea name="message" placeholder="Message"></textarea>
+    <button type="submit">SUBMIT REQUEST</button>
+  </form>
+</section>
+
+<footer class="m-footer">
+  <strong>SOVRN TECHNOLOGIES</strong>
+  Merced, California · Security · Smart Home · Networking
+</footer>
+<script>
+document.querySelectorAll('.m-menu').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const nav=btn.parentElement.querySelector('.m-nav');
+    const open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+});
+</script>
+
+</div>
+</body></html>

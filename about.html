@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About | SOVRN Technologies</title>
+<link rel="stylesheet" href="site.css">
+</head><body>
+<main class="page-shot">
+<img src="assets/about.jpg" alt="About">
+<a class="hotspot" href="index.html" aria-label="Home" style="left:33.0%;top:1.0%;width:7.0%;height:7%"></a>
+<a class="hotspot" href="residential.html" aria-label="Residential" style="left:41.0%;top:1.0%;width:11.0%;height:7%"></a>
+<a class="hotspot" href="commercial.html" aria-label="Commercial" style="left:53.0%;top:1.0%;width:11.0%;height:7%"></a>
+<a class="hotspot" href="services.html" aria-label="Services" style="left:65.0%;top:1.0%;width:8.0%;height:7%"></a>
+<a class="hotspot" href="about.html" aria-label="About" style="left:75.0%;top:1.0%;width:7.0%;height:7%"></a>
+<a class="hotspot" href="contact.html" aria-label="Contact" style="left:83.0%;top:1.0%;width:8.0%;height:7%"></a>
+<a class="hotspot" href="about.html" aria-label="Learn Our Story" style="left:5.0%;top:61.0%;width:25.0%;height:8.0%"></a>
+</main>
+
+<div class="mobile-site">
+
+<div class="m-header">
+  <a class="m-logo" href="index.html">SOVRN<small>TECHNOLOGIES</small></a>
+  <button class="m-menu" aria-expanded="false">MENU</button>
+  <nav class="m-nav"><a href="index.html" class="">HOME</a><a href="residential.html" class="">RESIDENTIAL</a><a href="commercial.html" class="">COMMERCIAL</a><a href="services.html" class="">SERVICES</a><a href="about.html" class="active">ABOUT</a><a href="contact.html" class="">CONTACT</a><a class="m-consult" href="contact.html">REQUEST CONSULTATION</a></nav>
+</div>
+<section class="m-hero" style="--hero:url('assets/about-merced-hero.jpg')">
+  <div class="m-hero-copy">
+    <div class="m-kicker">BUILT IN MERCED, CALIFORNIA</div>
+    <h1>LOCAL ROOTS.<br><span>MADE FOR<br>THE PEOPLE.</span></h1>
+    <p>SOVRN Technologies was built on one mission: Modern Technology should give people more independence.</p>
+  </div>
+</section>
+<section class="m-section">
+  <h2>TECHNOLOGY SHOULD<br><span>EMPOWER THE OWNER</span></h2>
+  <p class="m-section-intro">We build systems around long-term ownership, local storage, practical service and technology that works for the people using it.</p>
+  <div class="m-grid">
+    <div class="m-card"><b>LOCAL & INDEPENDENT</b><p>Proudly based in Merced and serving the surrounding Central Valley.</p></div>
+    <div class="m-card"><b>BUILT WITH PURPOSE</b><p>Solutions designed around real needs.</p></div>
+    <div class="m-card"><b>MADE FOR THE PEOPLE</b><p>Technology that works for you.</p></div>
+  </div>
+</section>
+
+<footer class="m-footer">
+  <strong>SOVRN TECHNOLOGIES</strong>
+  Merced, California · Security · Smart Home · Networking
+</footer>
+<script>
+document.querySelectorAll('.m-menu').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const nav=btn.parentElement.querySelector('.m-nav');
+    const open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+});
+</script>
+
+</div>
+</body></html>
